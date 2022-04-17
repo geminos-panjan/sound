@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+:root {
+  --header-heignt: 52px;
+  --footer-height: 52px;
+  --theme-color: hsl(350, 60%, 50%);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", "Noto Sans JP", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+a:link,
+a:visited {
+  color: navy;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:active {
+  color: red;
+}
+
+.header {
+  background-color: var(--theme-color);
+  color: white;
+  height: var(--header-heignt);
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  max-width: calc(800px - 32px * 2);
+  width: 100%;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 0 32px;
+}
+
+.main {
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  min-height: calc(100% - var(--header-heignt) - var(--footer-height));
+  box-sizing: border-box;
+}
+
+.footer {
+  text-align: center;
+  background: hsl(0, 0%, 85%);
+  height: var(--footer-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.freq-range {
+  width: 90%;
+}
+
+.show-freq-range {
+  min-width: 5ch;;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.label {
+  min-width: 3em;
+}
+
+.show-playing {
+  color: red;
+}
+
+.show-playing.is-playing {
+  color: blue;
+}
+
+.button {
+  user-select: none;
+  appearance: none;
+  color: white;
+  background-color: var(--theme-color);
+  font-size: larger;
+  font-weight: bold;
+  border: none;
+  border-radius: 100vh;
+  padding: 4px 16px;
+}
+
+.button:hover {
+  background-color: hsl(350, 60%, 40%);
+}
+
+.button:active {
+  background-color: hsl(350, 60%, 20%);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sound - geminos-panjan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/index/favicon.ico">
+  <meta name="twitter:card" content="summary">
+  <meta property="og:url" content="https://geminos-panjan.github.io/sound/">
+  <meta property="og:title" content="Soung - geminos-panjan">
+  <meta property="og:image" content="https://geminos-panjan.github.io/index/favicon.ico">
+</head>
+<body>
+  <header class="header">
+    <div class="title">Sound</div>
+  </header>
+  <main class="main">
+    <div class="flex-row">
+      <div class="label">音量</div>
+      <input type="range" class="volume-range" min="0" max="100" step="5"
+        value="100" oninput="showVolume()">
+      <div class="show-volume-range"></div>
+    </div>
+    <div class="flex-row">
+      <div class="label">周波数</div>
+      <input type="range" class="freq-range" min="0" max="20000" step="10"
+        value="440" oninput="showFreq()">
+      <div class="show-freq-range"></div>
+    </div>
+    <div class="flex-row">
+      <div class="label show-playing">停止中</div>
+      <div class="label show-muting"></div>
+    </div>
+    <button class="button" onclick="changePlaying()">再生/停止</button>
+  </main>
+  <footer class="footer">
+    <div>&copy;&nbsp;2022&nbsp;
+      <a href="https://github.com/geminos-panjan" target="_blank"
+        rel="noopener noreferrer">geminos-panjan</a>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
